@@ -27,3 +27,12 @@ function add(array){
     console.log(array);
 }
 console.log(add(array));
+
+// var and let 
+function main(){
+    var x = 10;
+    function inner(){
+        var y = 20;
+        console.log(x+y) ;
+    }
+}
