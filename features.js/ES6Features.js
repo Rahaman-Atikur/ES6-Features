@@ -12,27 +12,44 @@
 
 // Pass By value and Pass by reference
 let name = "John";
-function person(val){
-    console.log("Name",val);
+function person(val) {
+  console.log("Name", val);
 }
 person("Atikur");
 
 // Pass By reference
-let array = [10,20,30,40,50];
-function add(array){
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        array[i] = element*element;
-    }
-    console.log(array);
+let array = [10, 20, 30, 40, 50];
+function add(array) {
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    array[i] = element * element;
+  }
+  console.log(array);
 }
 console.log(add(array));
 
-// var and let 
-function main(){
-    var x = 10;
-    function inner(){
-        var y = 20;
-        console.log(x+y) ;
-    }
+// var and let
+function main() {
+  var x = 10;
+  if (x === 10) {
+    const y = 20;
+    console.log(x + y);
+  }
+  console.log(y);
 }
+main();
+
+//? Scope(Global,function,Block Scope)
+const firstName = "John";
+function add() {
+  let age = 20;
+  console.log(age);
+  function modify() {
+    let isMarried = false;
+    console.log(age + 20, isMarried);
+  }
+  isMarried = true;
+  console.log("His maretial status is", isMarried);
+  modify();
+}
+add();
