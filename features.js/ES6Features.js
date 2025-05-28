@@ -100,7 +100,32 @@
 
 
  // Template Literal
-let firstName = "Shuvo";
-let lastName = "Rahaman";
-console.log(firstName + lastName);
-console.log(`${firstName} ${lastName}`);
+// let firstName = "Shuvo";
+// let lastName = "Rahaman";
+// console.log(firstName + lastName);
+// console.log(`${firstName} ${lastName}`);
+
+// DOM application
+// let user = {name:"Shuvo",age:23};
+// let person = `user name:${user.name} user age:${user.age}`;
+// document.body.innerHTML=`<h1>${person}</h1>`
+
+// Arrow Function
+// let add = x=>x*x;
+// console.log(add(5));
+// parameter
+// let multiLine = (x,y) =>{    
+//    return x*y;
+// }
+// console.log(multiLine(5,6));
+// // No parameter
+// let showMessage=()=>console.log("NO Entry");
+
+// console.log(showMessage());
+
+
+// Spread and Rest Methods
+
+let arrayOne = [10,20,30,40,50];
+let arrayTwo = [...arrayOne,79];
+console.log(arrayTwo);
