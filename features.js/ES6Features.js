@@ -79,14 +79,20 @@
 // }
 // greet(12,anotherFun());
 
-function calculator(firstValue,secondValue,operator,calculatorFunction){
-    // call back function
-    add(firstValue,secondValue); 
+// function calculator(firstValue,secondValue,operator,calculatorFunction){
+//     // call back function
+//     add(firstValue,secondValue); 
+// }
+// function add(firstValue,secondValue){
+//    console.log(firstValue+secondValue);
+// }
+// function subs(firstValue,secondValue){
+//     console.log(firstValue-secondValue);
+// }
+// calculator(10,20,'+',add);
+
+// Default Function parameter
+function greet(name="Guest"){
+    console.log(name);
 }
-function add(firstValue,secondValue){
-   console.log(firstValue+secondValue);
-}
-function subs(firstValue,secondValue){
-    console.log(firstValue-secondValue);
-}
-calculator(10,20,'+',add);
+greet();
