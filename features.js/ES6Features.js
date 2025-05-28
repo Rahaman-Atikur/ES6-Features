@@ -67,4 +67,14 @@
 // modifyStudent(isStudent);
 
 
-// Higher Order and Callback functions
+// Higher Order and 
+function greet(val,fn){
+    console.log("Hello World",val);
+    
+    
+}
+// Callback functions
+function anotherFun(){
+    console.log("Its okay ");
+}
+greet(12,anotherFun());
