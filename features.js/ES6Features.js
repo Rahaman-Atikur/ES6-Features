@@ -68,13 +68,25 @@
 
 
 // Higher Order and 
-function greet(val,fn){
-    console.log("Hello World",val);
+// function greet(val,fn){
+//     console.log("Hello World",val);
     
     
-}
+// }
 // Callback functions
-function anotherFun(){
-    console.log("Its okay ");
+// function anotherFun(){
+//     console.log("Its okay ");
+// }
+// greet(12,anotherFun());
+
+function calculator(firstValue,secondValue,operator,calculatorFunction){
+    // call back function
+    add(firstValue,secondValue); 
 }
-greet(12,anotherFun());
+function add(firstValue,secondValue){
+   console.log(firstValue+secondValue);
+}
+function subs(firstValue,secondValue){
+    console.log(firstValue-secondValue);
+}
+calculator(10,20,'+',add);
