@@ -66,12 +66,10 @@
 // }
 // modifyStudent(isStudent);
 
-
-// Higher Order and 
+// Higher Order and
 // function greet(val,fn){
 //     console.log("Hello World",val);
-    
-    
+
 // }
 // Callback functions
 // function anotherFun(){
@@ -81,7 +79,7 @@
 
 // function calculator(firstValue,secondValue,operator,calculatorFunction){
 //     // call back function
-//     add(firstValue,secondValue); 
+//     add(firstValue,secondValue);
 // }
 // function add(firstValue,secondValue){
 //    console.log(firstValue+secondValue);
@@ -97,9 +95,7 @@
 // }
 // greet();
 
-
-
- // Template Literal
+// Template Literal
 // let firstName = "Shuvo";
 // let lastName = "Rahaman";
 // console.log(firstName + lastName);
@@ -114,7 +110,7 @@
 // let add = x=>x*x;
 // console.log(add(5));
 // parameter
-// let multiLine = (x,y) =>{    
+// let multiLine = (x,y) =>{
 //    return x*y;
 // }
 // console.log(multiLine(5,6));
@@ -123,9 +119,34 @@
 
 // console.log(showMessage());
 
-
 // Spread and Rest Methods
 
-let arrayOne = [10,20,30,40,50];
-let arrayTwo = [...arrayOne,79];
-console.log(arrayTwo);
+// let arrayOne = [10,20,30,40,50];
+// let arrayTwo = [...arrayOne,79];
+// console.log(arrayTwo);
+
+// let user = {name:"Atikur", id:23};
+// let newUser = {...user,role:"Admin"};
+// console.log(newUser);
+
+// Rest Methods
+
+// function sum(...numbers){
+//     console.log(numbers);
+// }
+// sum(12,13,15);
+// sum(12,13,15,18,33,22,48);
+
+// Destructuring Array and Object
+// let numbers = [10, 20, 30, 40, 50];
+let [first, second, ...rest] = [10, 20, 30, 40, 50];
+console.log(first, second, rest);
+
+// Object Destructuring
+let person = {
+    name:"Atik",
+    age:24,
+    profession:"Programmer"
+}
+let {name: personName,age,jobStatus=false} = person;
+console.log(personName,age,jobStatus);
