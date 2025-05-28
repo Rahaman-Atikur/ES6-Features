@@ -92,7 +92,15 @@
 // calculator(10,20,'+',add);
 
 // Default Function parameter
-function greet(name="Guest"){
-    console.log(name);
-}
-greet();
+// function greet(name="Guest"){
+//     console.log(name);
+// }
+// greet();
+
+
+
+ // Template Literal
+let firstName = "Shuvo";
+let lastName = "Rahaman";
+console.log(firstName + lastName);
+console.log(`${firstName} ${lastName}`);
