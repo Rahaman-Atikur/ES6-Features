@@ -139,14 +139,28 @@
 
 // Destructuring Array and Object
 // let numbers = [10, 20, 30, 40, 50];
-let [first, second, ...rest] = [10, 20, 30, 40, 50];
-console.log(first, second, rest);
+// let [first, second, ...rest] = [10, 20, 30, 40, 50];
+// console.log(first, second, rest);
 
-// Object Destructuring
-let person = {
-    name:"Atik",
-    age:24,
-    profession:"Programmer"
+// // Object Destructuring
+// let person = {
+//     name:"Atik",
+//     age:24,
+//     profession:"Programmer"
+// }
+// let {name: personName,age,jobStatus=false} = person;
+// console.log(personName,age,jobStatus);
+
+
+// Object Properties and Method
+let Person = {
+    name:"Ali",
+    age:25,
+    city:"Dhaka",
+    // Function Method
+    greet:function(){
+        return `Hello ${this.name}`;
+    }
 }
-let {name: personName,age,jobStatus=false} = person;
-console.log(personName,age,jobStatus);
+Person.name="Atikur";
+console.log(Person);
